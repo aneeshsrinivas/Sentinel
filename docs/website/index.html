@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENTINEL: Behavioral DDoS Detection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>SENTINEL</h1>
+            <p class="subtitle">A Behavioral DDoS Detection Framework Using Adaptive Baseline Profiling and Multi-Dimensional Temporal Correlation</p>
+            <div class="authors">Aneesh Srinivas, Dr. Madhura K, Dr. Shweta S Aladakatti</div>
+            <div class="metrics">
+                <div class="metric"><strong>90.2%</strong><br>Detection Rate</div>
+                <div class="metric"><strong>15.5s</strong><br>Mean Latency</div>
+                <div class="metric"><strong><1 / 12h</strong><br>False Positives</div>
+            </div>
+            <div class="actions">
+                <a href="#" class="btn primary">Read Paper</a>
+                <a href="https://github.com/aneeshsrinivas/sentinel" class="btn secondary">GitHub Repository</a>
+                <a href="#" class="btn secondary">Dataset (Zenodo)</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="problem">
+            <h2>The Problem</h2>
+            <p>Application-layer DDoS attacks bypass traditional volumetric defenses because each bot sends traffic at normal, individual rates. Existing approaches either rely on static thresholds that generate elevated false-positive rates or route traffic through third-party scrubbing infrastructure, introducing latency and data-sovereignty concerns.</p>
+        </section>
+
+        <section class="architecture">
+            <h2>Architecture</h2>
+            <p>SENTINEL detects coordinated behavior patterns instead of volume natively at the gateway boundary.</p>
+            <div class="placeholder-img">[ Sentinel Architecture Diagram Placeholder: assets/architecture.png ]</div>
+        </section>
+
+        <section class="innovations">
+            <h2>Key Innovations</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Adaptive Baseline Profiling</h3>
+                    <p>EWMA model learns service-specific traffic patterns and adapts to diurnal cycles.</p>
+                </div>
+                <div class="card">
+                    <h3>Persistence Tracking</h3>
+                    <p>Leaky accumulator filters transient spikes to distinguish attacks from organic surges.</p>
+                </div>
+                <div class="card">
+                    <h3>Multi-Signal Correlation</h3>
+                    <p>Correlates independent behavioral signals to reduce false positives drastically by requiring multi-dimensional temporal synchronization.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="reproducibility">
+            <h2>Reproducibility</h2>
+            <p>The entire Sentinel testbed and experimental simulation suite is open source.</p>
+            <pre><code>git clone https://github.com/aneeshsrinivas/sentinel.git
+cd sentinel
+docker-compose -f docker/docker-compose.yml up -d
+python experiments/run_scenario.py --all
+python evaluation/compute_metrics.py</code></pre>
+        </section>
+
+        <section class="citation">
+            <h2>Citation</h2>
+            <pre><code>@article{sentinel2026,
+  title={SENTINEL: Behavioral DDoS Detection Framework},
+  author={Srinivas, Aneesh and K, Madhura and Aladakatti, Shweta S},
+  journal={Future Internet},
+  year={2026}
+}</code></pre>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 Aneesh Srinivas. MIT License.</p>
+        </div>
+    </footer>
+</body>
+</html>

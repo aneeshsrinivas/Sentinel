@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Srinivas"
+  given-names: "Aneesh"
+title: "SENTINEL: A Behavioral DDoS Detection Framework Using Adaptive Baseline Profiling and Multi-Dimensional Temporal Correlation"
+version: 1.0.0
+date-released: 2026-03-14
+url: "https://github.com/aneeshsrinivas/sentinel"
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Srinivas"
+    given-names: "Aneesh"
+  - family-names: "K"
+    given-names: "Madhura"
+  - family-names: "Aladakatti"
+    given-names: "Shweta S"
+  title: "SENTINEL: A Behavioral DDoS Detection Framework Using Adaptive Baseline Profiling and Multi-Dimensional Temporal Correlation"
+  journal: "Future Internet"
+  year: 2026

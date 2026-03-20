@@ -1,0 +1,8 @@
+distributed_connection_burst: 0.50
+synchronized_request_timing: 0.40
+incomplete_handshake_ratio_spike: 0.35
+geographic_entropy_reduction: 0.30
+session_duration_anomaly: 0.25
+per_source_request_rate_spike: 0.20
+protocol_compliance_violations: 0.15
+user_agent_homogeneity: 0.10

@@ -1,0 +1,11 @@
+ewma_alpha: 0.3
+zscore_threshold: 3.0
+accumulator_decay: 0.8
+accumulator_threshold: 5.0
+correlation_window: 60
+detection_threshold: 0.70
+mitigation_tier1_threshold: 0.70
+mitigation_tier2_threshold: 0.85
+mitigation_tier3_threshold: 0.90
+mitigation_deescalation_score: 0.60
+mitigation_deescalation_time: 120
